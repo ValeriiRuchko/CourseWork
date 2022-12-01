@@ -1,0 +1,66 @@
+ *, *::before, *::after {box-sizing: border-box;}
+
+.my-wrapper {
+  display: grid;
+  grid-template-columns: 18rem 18rem 18rem;
+  row-gap: 4rem;
+  column-gap: 4rem;
+  justify-content: center;
+  margin-top: 8%;
+} 
+
+.fill-window {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  overflow: auto;
+}
+
+.default-layout {
+  margin-top: 8%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.year-label-text {
+  padding: 2% 0 2% 2%;
+}
+
+
+.flex-table-wrapper {
+  margin: 1% 5% 2% 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.cell-wrapper {
+  text-align: center;
+  white-space: pre-wrap;
+  height: auto;
+  max-width: 5rem;
+}
+
+hr {
+  margin: 0;
+}
+
+.editpage-label-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1%;
+}
+
+.forms-wrapper {
+  margin: 3% 5% 2% 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 4%;
+}
