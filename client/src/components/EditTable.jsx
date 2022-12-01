@@ -1,7 +1,7 @@
 import {Autocomplete, TextField} from "@mui/material";
 
-function EditTable () {
-    const options = ['Предмет 1', 'Предмет 2', 'Предмет 3'];
+function EditTable (props) {
+    const options = ['Опція 1', 'Опція 2', 'Опція 3'];
 
     return (
         <div className="forms-wrapper">
@@ -10,28 +10,28 @@ function EditTable () {
             id="combo-box"
             options={options}
             sx={{flexGrow: 3}}
-            renderInput={(params) => <TextField {...params} label="1-пара" />}
+            renderInput={(params) => <TextField {...params} label={props.lable_name[0]} />}
             />
             <Autocomplete
             selectOnFocus
             id="combo-box"
             options={options}
             sx={{flexGrow: 3 }}
-            renderInput={(params) => <TextField {...params} label="2-пара" />}
+            renderInput={(params) => <TextField {...params} label={props.lable_name[1]} />}
             />
             <Autocomplete
             selectOnFocus
             id="combo-box"
             options={options}
             sx={{flexGrow: 3 }}
-            renderInput={(params) => <TextField {...params} label="3-пара" />}
+            renderInput={(params) => <TextField {...params} label={props.lable_name[2]} />}
             />
             <Autocomplete
             selectOnFocus
             id="combo-box"
             options={options}
             sx={{flexGrow: 3 }}
-            renderInput={(params) => <TextField {...params} label="4-пара" />}
+            renderInput={(params) => <TextField {...params} label={props.lable_name[3]} />}
             />
         </div>
     );

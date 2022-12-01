@@ -30,10 +30,10 @@ function EditSchedule () {
                     </div>
                 </div>
                 <TimeFields />
-                <EditTable />
-                <EditTable />
-                <EditTable />
-                <EditTable />
+                <EditTable lable_name={["Назва", "Назва", "Назва", "Назва"]} />
+                <EditTable lable_name={["Час", "Час", "Час", "Час"]}/>
+                <EditTable lable_name={["Ступінь", "Ступінь", "Ступінь", "Ступінь"]}/>
+                <EditTable lable_name={["ПІБ", "ПІБ", "ПІБ", "ПІБ"]}/>
             <Footer />
         </div>
     );
